@@ -1,0 +1,107 @@
+.attribution { font-size: 11px; text-align: center; position: relative;bottom: -900px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    height: 100;/*Takes the entire screen*/
+    overflow: hidden;/*Anything outside the screen is hidden*/
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svgPos{
+    position: absolute;
+}
+#top{
+    left: -150px;
+    top: -50%;
+}
+#bottom{
+    top: 50%;
+    right: -12%;
+}
+.container{
+    display: inline-block;
+    height: auto;
+    position: absolute;
+    bottom: 30%;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 100px 1px black;
+}
+.image{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%; /* Adjusted to take up the full width of the container */
+    height: auto; /* Ensures image height adjusts proportionally */
+}
+#profile{
+    position: absolute;
+    right: 35%;
+    border-radius: 50%;
+    top: 23%;
+    border: 6px solid white;
+    width: 30%;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom:100px ;
+    position: relative;
+    bottom: -85px;
+    right: -10px;
+    padding: 0px 0px 20px 0px;
+}
+#place{
+    display: inline;
+    position: relative;
+    right: -44%;
+    top: -20px;
+}
+.stats{
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.Followers{
+    position: relative;
+    right: -75px;
+    padding-top: 15px;
+}
+.line{
+    display: block;
+    margin: 1em 0; /* Adjust spacing around the line break */
+    border-top: 1px solid hsl(0, 0%, 59%); /* Example: Adds a red border above the line break */
+    padding-top: 0.5em; /* Example: Adjusts padding above the line break */
+}
+p{
+    color:hsl(0, 0%, 59%);
+    font-weight: 600;
+}
+@media(max-width:500px){
+    .container{
+        width: 400px;
+    }
+    .Followers{
+        right: -50px;
+    }
+    .stats{
+        gap: 50px;
+    }
+    #top{
+        left: -690px;
+        top: -60%;
+    }
+    #bottom{
+        right: -150%;
+        bottom: -50px;
+    }
+}
